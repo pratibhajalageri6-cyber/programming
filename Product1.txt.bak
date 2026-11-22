@@ -1,0 +1,14 @@
+class Product
+{
+	public static void main(String[] args)
+	{
+		int n=123,product=0;
+		while(n!=0)
+		{
+		int last=n%10;
+		product=product+last;
+		n=n/10;
+		}
+		System.out.println(product);
+	}
+}

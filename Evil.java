@@ -1,0 +1,20 @@
+class Evil
+{
+	public static void main(String[] args)
+	{
+		int n=13,count=0;
+		while(n!=0)
+		{
+			int rem=n%2;
+			if(rem==1)
+			{
+				count++;
+			}
+			n=n/2;
+		}
+		if(count % 2 == 0)
+			System.out.println("Evil");
+		else
+			System.out.println("not Evil");
+	}
+}

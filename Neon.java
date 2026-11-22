@@ -1,0 +1,16 @@
+class Neon
+{
+	public static void main(String[] args)
+	{
+		int n=9,sum=0;
+		int sq=n*n;
+		while(sq!=0)
+		{
+			int last=sq%10;
+			sum=sum+last;
+			sq=sq/10;
+		}
+		if(sum==n)
+		System.out.println(n);
+	}
+}

@@ -1,0 +1,17 @@
+class Spay
+{
+	public static void main(String[] args)
+	{
+		int n=123,temp=n,sum=0,product=1;
+		while(n!=0)
+		{
+			int last=n%10;
+			sum=sum+last;
+			product=product*last;
+			n=n/10;
+		}
+		if(sum==product)
+		System.out.println(sum);
+		System.out.println(product);
+	}
+}

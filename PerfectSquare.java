@@ -1,0 +1,20 @@
+class PerfectSquare
+{
+	public static void main(String[] args)
+	{
+		int n=28;
+		for(int i=1;i<=n;i++)
+		{
+			if(i*i==n)
+			{
+				System.out.println("Perfect Square");
+				return;
+			}
+			if(i*i>n)
+			{
+				System.out.println("not a Perfect Square");
+				return;
+			}
+		}
+	}
+}	

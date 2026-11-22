@@ -1,0 +1,21 @@
+class Xhylem
+{
+	public static void main(String[] args)
+	{
+		int n=1234;
+		int last=n%10;
+		n=n/10;
+		int msum=0;
+		while(n>9)
+		{
+			int l=n/10;
+			msum=msum+l;
+			n=n/10;
+		}
+		int exsum=n+last;
+		if(exsum==msum)
+			System.out.println("Xhylem");
+		else
+			System.out.println("Phloem");
+	}
+}

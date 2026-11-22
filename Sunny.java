@@ -1,0 +1,20 @@
+class Sunny
+{
+	public static void main(String[] args)
+	{
+		int n=8,num=n+1;
+		for(int i=1;i<=num;i++)
+		{
+			if(i*i==num)
+			{
+				System.out.println("n is sunny number");
+				return;
+			}
+			if(i*i>num)
+			{
+				System.out.println("not a Sunny number");
+			}
+		}
+	}
+}
+			

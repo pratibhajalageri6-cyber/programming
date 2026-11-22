@@ -1,0 +1,16 @@
+class Evendigit
+{
+	public static void main(String[] args)
+	{
+		int n=123;
+		while(n!=0)
+		{
+		int last=n%10;
+		if(last%2==0)
+		{
+		System.out.println(last);
+		}
+		n=n/10;
+		}
+	}
+}

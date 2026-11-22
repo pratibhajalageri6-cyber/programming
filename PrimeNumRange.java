@@ -1,0 +1,31 @@
+class PrimeNum
+{
+	public static boolean isPrime(int n)
+	{
+		int count=0;
+		for(int i=1;i<=n;i++)
+		{
+			if(n%i==0)
+				count++;
+		}
+		if(count==2)
+			return true;
+		else
+			return false;
+	}
+}
+class PrimeNumRange
+{
+	public static void main(String args[])
+    {
+        int start=106,end=290;
+		for(int i=start;i<end;i++)
+		{
+			boolean l = PrimeNum.isPrime(i);
+			if(l==true)
+			{
+				System.out.println(i);
+			}
+		}
+	}
+}

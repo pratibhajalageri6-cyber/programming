@@ -1,0 +1,30 @@
+class Fact
+{
+	public static int factorial(int n)
+	{
+		int fact=1;
+		for(int i=0;i<=n;i++)
+		{
+			fact=fact*i;
+		}
+		return fact;
+	}
+}
+class StrongNum
+{
+	public static void main(String args[])
+	{
+		int n=15,temp=n;
+		int sum=0;
+		while(n!=0)
+		{
+			int last=n%10;
+			sum=sum+Fact.factorial(last);
+			n=n/10;
+		}
+		if(sum==temp)
+			System.out.println("Strong Number");
+        else
+            System.out.println("not Strong Number");
+	}
+}
